@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Space Quiz</string>
+
+    <!-- Splash screen -->
+    <string name="splash_screen_title">Welcome</string>
+    <string name="splash_screen_subtitle">May the Force be with you</string>
+
+
+    <!-- Main Activity title -->
+    <string name="title">Space Quiz</string>
+
+    <!-- Quiz questions -->
+    <string name="question_one">1. What is the hottest planet in our Solar System?</string>
+    <string name="question_two">2. Olympus Mons, a volcano on Mars, is 2.5 times taller than what mountain on Earth?</string>
+    <string name="question_three">3. The International Space Station orbits Earth every __ minutes?</string>
+    <string name="question_four">4. How many moons does Jupiter have?</string>
+    <string name="question_five">5. How long can humans survive in the vacuum of space without a spacesuit?</string>
+    <string name="question_six">6. Is there sound in space?</string>
+    <string name="question_seven">7. What is on the golden records on Voyager 1 and 2? Select all that apply.</string>
+
+    <!-- Quiz answers -->
+
+    <!-- Question 1 -->
+    <string name="edit_text_hint">e.g. Mercury</string>
+
+    <!-- Question 2 -->
+    <string name="mount_one">Mount Kilimanjaro</string>
+    <string name="mount_two">Mount Everest</string>  // Correct answer
+    <string name="mount_three">Mount Fuji</string>
+
+    <!-- Question 3 -->
+    <string name="ninety">90</string> // Correct answer
+    <string name="thirty">30</string>
+    <string name="one_twenty">120</string>
+
+    <!-- Question 4 -->
+    <string name="jupiter_one">69</string> // Correct answer
+    <string name="jupiter_two">32</string>
+    <string name="jupiter_three">14</string>
+
+    <!-- Question 5 -->
+    <string name="wrong_one">You can\'t. You would die instantly.</string>
+    <string name="wrong_two">Several minutes.</string>
+    <string name="correct">15 seconds while conscious.</string> // Correct answer
+
+    <!-- Question 6 -->
+    <string name="yes">Yes</string>
+    <string name="no">No</string> // Correct answer
+
+    <!-- Question 7 -->
+    <string name="nature">Nature sounds</string>
+    <string name="music">Music, including Beethoven and Chuck Berry</string>
+    <string name="narration">Orson Welles\' narration of The War of the Worlds</string> // Not correct
+    <string name="pictures">Pictures and diagrams of life on Earth</string>
+
+    <!-- Image descriptions -->
+    <string name="solar_system">Solar system</string>
+    <string name="dont_panic">Don\'t Panic</string>
+    <string name="space_station">International Space Station</string>
+    <string name="voyager_record">Golden record on Voyager spacecraft</string>
+
+    <!-- Buttons -->
+    <string name="submit">Submit</string>
+    <string name="reset">Reset</string>
+</resources>

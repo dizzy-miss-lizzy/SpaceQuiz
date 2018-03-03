@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.spacequiz.SplashScreen">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/panic_image_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/splash_screen_title"
+        android:textColor="@android:color/black"
+        android:textSize="48sp" />
+
+    <ImageView
+        android:contentDescription="@string/dont_panic"
+        android:id="@+id/panic_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:scaleType="center"
+        android:src="@drawable/panic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/panic_image_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/splash_screen_subtitle"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+</RelativeLayout>
