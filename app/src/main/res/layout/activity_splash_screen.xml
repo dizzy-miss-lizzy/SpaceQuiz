@@ -5,10 +5,20 @@
     android:layout_height="match_parent"
     tools:context="com.example.android.spacequiz.SplashScreen">
 
+    <ImageView
+        android:id="@+id/tesla_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/tesla_roadster"
+        android:scaleType="centerCrop"
+        android:src="@drawable/tesla1" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@id/panic_image_view"
+        android:layout_above="@id/tesla_image_view"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="16dp"
         android:fontFamily="sans-serif-condensed"
@@ -16,24 +26,15 @@
         android:textColor="@android:color/black"
         android:textSize="48sp" />
 
-    <ImageView
-        android:contentDescription="@string/dont_panic"
-        android:id="@+id/panic_image_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:scaleType="center"
-        android:src="@drawable/panic" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/panic_image_view"
+        android:layout_below="@id/tesla_image_view"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
         android:fontFamily="sans-serif-condensed"
         android:text="@string/splash_screen_subtitle"
         android:textColor="@android:color/black"
-        android:textSize="24sp" />
+        android:textSize="30sp" />
 
 </RelativeLayout>
