@@ -3,7 +3,7 @@
 
     <!-- Splash screen -->
     <string name="splash_screen_title">Welcome</string>
-    <string name="splash_screen_subtitle">May the Force be with you</string>
+    <string name="splash_screen_subtitle">Don\'t panic</string>
 
 
     <!-- Main Activity title -->
@@ -54,6 +54,7 @@
     <string name="pictures">Pictures and diagrams of life on Earth</string>
 
     <!-- Image descriptions -->
+    <string name="tesla_roadster">Elon Musk\'s Tesla in space</string>
     <string name="solar_system">Solar system</string>
     <string name="dont_panic">Don\'t Panic</string>
     <string name="space_station">International Space Station</string>
