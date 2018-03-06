@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         boolean checked = ((RadioButton) view).isChecked();
 
         // Check which radio button was clicked
-        switch(view.getId()) {
+        switch (view.getId()) {
             case R.id.kilimanjaro_radio_button:
                 if (checked)
                     break;
@@ -59,11 +59,11 @@ public class MainActivity extends AppCompatActivity {
         boolean checked = ((RadioButton) view).isChecked();
 
         // Check which radio button was clicked
-        switch(view.getId()) {
+        switch (view.getId()) {
             case R.id.ninety_radio_button:
                 if (checked)
                     score += 1;
-                    break;
+                break;
             case R.id.thirty_radio_button:
                 if (checked)
                     break;
@@ -85,11 +85,11 @@ public class MainActivity extends AppCompatActivity {
         boolean checked = ((RadioButton) view).isChecked();
 
         // Check which radio button was clicked
-        switch(view.getId()) {
+        switch (view.getId()) {
             case R.id.jupiter_one_radio_button:
                 if (checked)
                     score += 1;
-                    break;
+                break;
             case R.id.jupiter_two_radio_button:
                 if (checked)
                     break;
@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
         boolean checked = ((RadioButton) view).isChecked();
 
         // Check which radio button was clicked
-        switch(view.getId()) {
+        switch (view.getId()) {
             case R.id.wrong_one_radio_button:
                 if (checked)
                     break;
@@ -121,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.correct_radio_button:
                 if (checked)
                     score += 1;
-                    break;
+                break;
             default:
                 score = 0;
                 break;
@@ -137,14 +137,14 @@ public class MainActivity extends AppCompatActivity {
         boolean checked = ((RadioButton) view).isChecked();
 
         // Check which radio button was clicked
-        switch(view.getId()) {
+        switch (view.getId()) {
             case R.id.yes_radio_button:
                 if (checked)
-                break;
+                    break;
             case R.id.no_radio_button:
                 if (checked)
                     score += 1;
-                    break;
+                break;
             default:
                 score = 0;
                 break;
@@ -160,7 +160,7 @@ public class MainActivity extends AppCompatActivity {
         boolean checked = ((CheckBox) view).isChecked();
 
         // Check which checkbox was clicked
-        switch(view.getId()) {
+        switch (view.getId()) {
             case R.id.nature_check_box:
                 nature = checked;
                 break;

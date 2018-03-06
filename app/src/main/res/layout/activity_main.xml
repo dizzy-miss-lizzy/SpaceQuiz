@@ -58,8 +58,8 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:hint="@string/edit_text_hint"
-                android:inputType="textCapWords"
-                android:imeOptions="actionDone" />
+                android:imeOptions="actionDone"
+                android:inputType="textCapWords" />
 
             <View
                 android:layout_width="match_parent"
@@ -88,16 +88,16 @@
                     android:id="@+id/kilimanjaro_radio_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/mount_one"
                     android:onClick="onSecondQuestionClicked"
+                    android:text="@string/mount_one"
                     android:textAppearance="?android:textAppearanceMedium" />
 
                 <RadioButton
                     android:id="@+id/everest_radio_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/mount_two"
                     android:onClick="onSecondQuestionClicked"
+                    android:text="@string/mount_two"
                     android:textAppearance="?android:textAppearanceMedium" />
 
                 <RadioButton
@@ -105,8 +105,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
-                    android:text="@string/mount_three"
                     android:onClick="onSecondQuestionClicked"
+                    android:text="@string/mount_three"
                     android:textAppearance="?android:textAppearanceMedium" />
 
             </RadioGroup>
@@ -150,16 +150,16 @@
                     android:id="@+id/ninety_radio_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/ninety"
                     android:onClick="onThirdQuestionClicked"
+                    android:text="@string/ninety"
                     android:textAppearance="?android:textAppearanceMedium" />
 
                 <RadioButton
                     android:id="@+id/thirty_radio_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/thirty"
                     android:onClick="onThirdQuestionClicked"
+                    android:text="@string/thirty"
                     android:textAppearance="?android:textAppearanceMedium" />
 
                 <RadioButton
@@ -167,8 +167,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
-                    android:text="@string/one_twenty"
                     android:onClick="onThirdQuestionClicked"
+                    android:text="@string/one_twenty"
                     android:textAppearance="?android:textAppearanceMedium" />
 
             </RadioGroup>
@@ -200,16 +200,16 @@
                     android:id="@+id/jupiter_one_radio_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/jupiter_one"
                     android:onClick="onFourthQuestionClicked"
+                    android:text="@string/jupiter_one"
                     android:textAppearance="?android:textAppearanceMedium" />
 
                 <RadioButton
                     android:id="@+id/jupiter_two_radio_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/jupiter_two"
                     android:onClick="onFourthQuestionClicked"
+                    android:text="@string/jupiter_two"
                     android:textAppearance="?android:textAppearanceMedium" />
 
                 <RadioButton
@@ -217,8 +217,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
-                    android:text="@string/jupiter_three"
                     android:onClick="onFourthQuestionClicked"
+                    android:text="@string/jupiter_three"
                     android:textAppearance="?android:textAppearanceMedium" />
 
             </RadioGroup>
@@ -261,16 +261,16 @@
                     android:id="@+id/wrong_one_radio_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/wrong_one"
                     android:onClick="onFifthQuestionClicked"
+                    android:text="@string/wrong_one"
                     android:textAppearance="?android:textAppearanceMedium" />
 
                 <RadioButton
                     android:id="@+id/wrong_two_radio_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/wrong_two"
                     android:onClick="onFifthQuestionClicked"
+                    android:text="@string/wrong_two"
                     android:textAppearance="?android:textAppearanceMedium" />
 
                 <RadioButton
@@ -311,8 +311,8 @@
                     android:id="@+id/yes_radio_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/yes"
                     android:onClick="onSixthQuestionClicked"
+                    android:text="@string/yes"
                     android:textAppearance="?android:textAppearanceMedium" />
 
                 <RadioButton
@@ -320,8 +320,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
-                    android:text="@string/no"
                     android:onClick="onSixthQuestionClicked"
+                    android:text="@string/no"
                     android:textAppearance="?android:textAppearanceMedium" />
 
             </RadioGroup>
@@ -359,8 +359,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginStart="16dp"
-                android:text="@string/nature"
                 android:onClick="onCheckBoxClicked"
+                android:text="@string/nature"
                 android:textAppearance="?android:textAppearanceMedium" />
 
             <CheckBox
@@ -369,8 +369,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:text="@string/music"
                 android:onClick="onCheckBoxClicked"
+                android:text="@string/music"
                 android:textAppearance="?android:textAppearanceMedium" />
 
             <CheckBox
@@ -379,8 +379,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:text="@string/narration"
                 android:onClick="onCheckBoxClicked"
+                android:text="@string/narration"
                 android:textAppearance="?android:textAppearanceMedium" />
 
             <CheckBox
@@ -389,8 +389,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:text="@string/pictures"
                 android:onClick="onCheckBoxClicked"
+                android:text="@string/pictures"
                 android:textAppearance="?android:textAppearanceMedium" />
 
         </LinearLayout>
@@ -406,10 +406,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginRight="8dp"
                 android:layout_marginEnd="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:layout_weight="1"
                 android:onClick="submitScore"
@@ -421,10 +421,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginRight="16dp"
                 android:layout_marginEnd="16dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="16dp"
                 android:layout_weight="1"
                 android:onClick="resetScore"
