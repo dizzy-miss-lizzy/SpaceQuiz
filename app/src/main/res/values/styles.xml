@@ -3,9 +3,58 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">#039BE5</item>
-        <item name="colorPrimaryDark">#0288D1</item>
-        <item name="colorAccent">#29B6F6</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Title -->
+    <style name="title" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">@dimen/marginTop</item>
+        <item name="android:textSize">@dimen/title_textSize</item>
+    </style>
+
+    <!-- Images -->
+    <style name="images" parent="AppTheme">
+        <item name="android:layout_marginLeft">@dimen/marginLeft</item>
+        <item name="android:layout_marginRight">@dimen/marginRight</item>
+        <item name="android:layout_marginTop">@dimen/marginTop</item>
+    </style>
+
+    <!-- Questions -->
+    <style name="question_textView" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:padding">@dimen/question_padding</item>
+        <item name="android:textSize">@dimen/default_textSize</item>
+    </style>
+
+    <!-- EditText -->
+    <style name="editText" parent="TextAppearance.AppCompat">
+        <item name="android:layout_marginBottom">@dimen/marginBottom</item>
+        <item name="android:layout_marginLeft">@dimen/marginLeft</item>
+        <item name="android:layout_marginRight">@dimen/marginRight</item>
+        <item name="android:textSize">@dimen/default_textSize</item>
+    </style>
+
+    <!-- Views (line dividers) -->
+    <style name="view" parent="TextAppearance.AppCompat">
+        <item name="android:layout_marginLeft">@dimen/marginLeft</item>
+        <item name="android:layout_marginRight">@dimen/marginRight</item>
+        <item name="android:background">@android:color/darker_gray</item>
+    </style>
+
+    <!-- RadioGroups -->
+    <style name="radioGroups" parent="TextAppearance.AppCompat">
+        <item name="android:layout_marginLeft">@dimen/marginLeft</item>
+    </style>
+
+    <!-- CheckBoxes -->
+    <style name="checkBoxes" parent="TextAppearance.AppCompat">
+        <item name="android:layout_marginLeft">@dimen/marginLeft</item>
+        <item name="android:layout_marginRight">@dimen/marginRight</item>
+        <item name="android:textSize">@dimen/checkBox_textSize</item>
     </style>
 
 </resources>
