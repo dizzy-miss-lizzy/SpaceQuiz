@@ -20,21 +20,21 @@
         android:layout_height="wrap_content"
         android:layout_above="@id/tesla_image_view"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="@dimen/marginBottom"
         android:fontFamily="sans-serif-condensed"
         android:text="@string/splash_screen_title"
         android:textColor="@android:color/black"
-        android:textSize="48sp" />
+        android:textSize="@dimen/splash_screen_title" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/tesla_image_view"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="@dimen/marginTop"
         android:fontFamily="sans-serif-condensed"
         android:text="@string/splash_screen_subtitle"
         android:textColor="@android:color/black"
-        android:textSize="30sp" />
+        android:textSize="@dimen/splash_screen_subtitle" />
 
 </RelativeLayout>
