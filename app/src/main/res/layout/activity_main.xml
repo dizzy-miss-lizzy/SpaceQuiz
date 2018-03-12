@@ -20,68 +20,54 @@
             tools:context="com.example.android.spacequiz.MainActivity">
 
             <TextView
+                style="@style/title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="16dp"
                 android:fontFamily="sans-serif-condensed"
-                android:text="@string/title"
-                android:textColor="@android:color/black"
-                android:textSize="24sp"
-                android:textStyle="bold" />
+                android:text="@string/title" />
 
             <ImageView
                 android:id="@+id/solar_system_image"
+                style="@style/images"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="16dp"
                 android:adjustViewBounds="true"
                 android:contentDescription="@string/solar_system"
                 android:scaleType="fitCenter"
                 android:src="@drawable/solarsystem" />
 
             <TextView
+                style="@style/question_textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="16dp"
-                android:text="@string/question_one"
-                android:textColor="@android:color/black"
-                android:textSize="16sp" />
+                android:text="@string/question_one" />
 
             <EditText
                 android:id="@+id/planet_view"
+                style="@style/editText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
                 android:hint="@string/edit_text_hint"
                 android:imeOptions="actionDone"
                 android:inputType="textCapWords" />
 
             <View
+                style="@style/view"
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:background="@android:color/darker_gray" />
+                android:layout_height="1dp" />
 
             <TextView
+                style="@style/question_textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="16dp"
-                android:text="@string/question_two"
-                android:textColor="@android:color/black"
-                android:textSize="16sp" />
+                android:text="@string/question_two" />
 
             <RadioGroup
                 android:id="@+id/radio_group_two"
+                style="@style/radioGroups"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginStart="16dp"
                 android:orientation="vertical">
 
                 <RadioButton
@@ -104,7 +90,7 @@
                     android:id="@+id/fuji_radio_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="16dp"
+                    android:layout_marginBottom="@dimen/marginBottom"
                     android:onClick="onSecondQuestionClicked"
                     android:text="@string/mount_three"
                     android:textAppearance="?android:textAppearanceMedium" />
@@ -112,38 +98,31 @@
             </RadioGroup>
 
             <View
+                style="@style/view"
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:background="@android:color/darker_gray" />
+                android:layout_height="1dp" />
 
             <ImageView
                 android:id="@+id/space_station_image_view"
+                style="@style/images"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="16dp"
                 android:adjustViewBounds="true"
                 android:contentDescription="@string/space_station"
                 android:scaleType="fitCenter"
                 android:src="@drawable/spacestation" />
 
             <TextView
+                style="@style/question_textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="16dp"
-                android:text="@string/question_three"
-                android:textColor="@android:color/black"
-                android:textSize="16sp" />
+                android:text="@string/question_three" />
 
             <RadioGroup
                 android:id="@+id/radio_group_three"
+                style="@style/radioGroups"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginStart="16dp"
                 android:orientation="vertical">
 
                 <RadioButton
@@ -166,7 +145,7 @@
                     android:id="@+id/one_twenty_radio_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="16dp"
+                    android:layout_marginBottom="@dimen/marginBottom"
                     android:onClick="onThirdQuestionClicked"
                     android:text="@string/one_twenty"
                     android:textAppearance="?android:textAppearanceMedium" />
@@ -174,26 +153,21 @@
             </RadioGroup>
 
             <View
+                style="@style/view"
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:background="@android:color/darker_gray" />
+                android:layout_height="1dp" />
 
             <TextView
+                style="@style/question_textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="16dp"
-                android:text="@string/question_four"
-                android:textColor="@android:color/black"
-                android:textSize="16sp" />
+                android:text="@string/question_four" />
 
             <RadioGroup
                 android:id="@+id/radio_group_four"
+                style="@style/radioGroups"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginStart="16dp"
                 android:orientation="vertical">
 
                 <RadioButton
@@ -216,7 +190,7 @@
                     android:id="@+id/jupiter_three_radio_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="16dp"
+                    android:layout_marginBottom="@dimen/marginBottom"
                     android:onClick="onFourthQuestionClicked"
                     android:text="@string/jupiter_three"
                     android:textAppearance="?android:textAppearanceMedium" />
@@ -224,37 +198,32 @@
             </RadioGroup>
 
             <View
+                style="@style/view"
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:background="@android:color/darker_gray" />
+                android:layout_height="1dp" />
 
             <ImageView
                 android:id="@+id/panic_image_view"
+                style="@style/images"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="16dp"
                 android:adjustViewBounds="true"
                 android:contentDescription="@string/dont_panic"
                 android:scaleType="fitCenter"
                 android:src="@drawable/panic" />
 
             <TextView
+                style="@style/question_textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="16dp"
-                android:text="@string/question_five"
-                android:textColor="@android:color/black"
-                android:textSize="16sp" />
+                android:text="@string/question_five" />
 
             <RadioGroup
                 android:id="@+id/radio_group_five"
+                style="@style/radioGroups"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginStart="16dp"
                 android:orientation="vertical">
 
                 <RadioButton
@@ -277,7 +246,7 @@
                     android:id="@+id/correct_radio_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="16dp"
+                    android:layout_marginBottom="@dimen/marginBottom"
                     android:onClick="onFifthQuestionClicked"
                     android:text="@string/correct"
                     android:textAppearance="?android:textAppearanceMedium" />
@@ -285,26 +254,21 @@
             </RadioGroup>
 
             <View
+                style="@style/view"
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:background="@android:color/darker_gray" />
+                android:layout_height="1dp" />
 
             <TextView
+                style="@style/question_textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="16dp"
-                android:text="@string/question_six"
-                android:textColor="@android:color/black"
-                android:textSize="16sp" />
+                android:text="@string/question_six" />
 
             <RadioGroup
                 android:id="@+id/radio_group_six"
+                style="@style/radioGroups"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginStart="16dp"
                 android:orientation="vertical">
 
                 <RadioButton
@@ -319,7 +283,7 @@
                     android:id="@+id/no_radio_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="16dp"
+                    android:layout_marginBottom="@dimen/marginBottom"
                     android:onClick="onSixthQuestionClicked"
                     android:text="@string/no"
                     android:textAppearance="?android:textAppearanceMedium" />
@@ -327,71 +291,57 @@
             </RadioGroup>
 
             <View
+                style="@style/view"
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:background="@android:color/darker_gray" />
+                android:layout_height="1dp" />
 
             <ImageView
                 android:id="@+id/voyager_image_view"
+                style="@style/images"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="16dp"
                 android:adjustViewBounds="true"
                 android:contentDescription="@string/voyager_record"
                 android:scaleType="fitCenter"
                 android:src="@drawable/voyager" />
 
             <TextView
+                style="@style/question_textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="16dp"
-                android:text="@string/question_seven"
-                android:textColor="@android:color/black"
-                android:textSize="16sp" />
+                android:text="@string/question_seven" />
 
             <CheckBox
                 android:id="@+id/nature_check_box"
+                style="@style/checkBoxes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginStart="16dp"
                 android:onClick="onCheckBoxClicked"
-                android:text="@string/nature"
-                android:textAppearance="?android:textAppearanceMedium" />
+                android:text="@string/nature" />
 
             <CheckBox
                 android:id="@+id/music_check_box"
+                style="@style/checkBoxes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
                 android:onClick="onCheckBoxClicked"
-                android:text="@string/music"
-                android:textAppearance="?android:textAppearanceMedium" />
+                android:text="@string/music" />
 
             <CheckBox
                 android:id="@+id/narration_check_box"
+                style="@style/checkBoxes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
                 android:onClick="onCheckBoxClicked"
-                android:text="@string/narration"
-                android:textAppearance="?android:textAppearanceMedium" />
+                android:text="@string/narration" />
 
             <CheckBox
                 android:id="@+id/pictures_check_box"
+                style="@style/checkBoxes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
                 android:onClick="onCheckBoxClicked"
-                android:text="@string/pictures"
-                android:textAppearance="?android:textAppearanceMedium" />
+                android:text="@string/pictures" />
 
         </LinearLayout>
 
@@ -405,12 +355,12 @@
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="8dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginBottom="@dimen/marginBottom"
+                android:layout_marginEnd="@dimen/submit_marginEnd"
+                android:layout_marginLeft="@dimen/submit_marginLeft"
+                android:layout_marginRight="@dimen/submit_marginRight"
+                android:layout_marginStart="@dimen/submit_marginStart"
+                android:layout_marginTop="@dimen/marginTop"
                 android:layout_weight="1"
                 android:onClick="submitScore"
                 android:text="@string/submit" />
@@ -420,12 +370,12 @@
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginBottom="@dimen/marginBottom"
+                android:layout_marginEnd="@dimen/reset_marginEnd"
+                android:layout_marginLeft="@dimen/reset_marginLeft"
+                android:layout_marginRight="@dimen/reset_marginRight"
+                android:layout_marginStart="@dimen/reset_marginStart"
+                android:layout_marginTop="@dimen/marginTop"
                 android:layout_weight="1"
                 android:onClick="resetScore"
                 android:text="@string/reset" />
