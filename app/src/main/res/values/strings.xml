@@ -22,6 +22,7 @@
 
     <!-- Question 1 -->
     <string name="edit_text_hint">e.g. Mercury</string>
+    <string name="edit_text_answer">Venus</string>
 
     <!-- Question 2 -->
     <string name="mount_one">Mount Kilimanjaro</string>
@@ -63,4 +64,9 @@
     <!-- Buttons -->
     <string name="submit">Submit</string>
     <string name="reset">Reset</string>
+
+    <!-- Toast Messages -->
+    <string name="submitted">You\'ve already submitted your answers</string>
+    <string name="score">Your score:&#160;</string>
+    <string name="max_score">&#160;out of 7</string>
 </resources>
