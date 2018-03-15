@@ -199,13 +199,13 @@ public class MainActivity extends AppCompatActivity {
     public void submitScore(View view) {
         // Check for isSubmitted value
         if (isSubmitted) {
-            Toast.makeText(getApplicationContext(), "You've already submitted your answers", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), getString(R.string.submitted), Toast.LENGTH_SHORT).show();
         } else {
             /**
              * Question 1: EditText
              * Correct answer: Venus
              */
-            if (planetName.getText().toString().trim().equals("Venus")) {
+            if (planetName.getText().toString().trim().equals(getString(R.string.edit_text_answer))) {
                 score += 1;
             } else {
                 score += 0;
@@ -220,7 +220,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
             // Displays toast message with user's score and changes isSubmitted value
-            Toast.makeText(getApplicationContext(), "Your score: " + score + " out of 7", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), getString(R.string.score) + score + getString(R.string.max_score), Toast.LENGTH_LONG).show();
             isSubmitted = true;
         }
     }
