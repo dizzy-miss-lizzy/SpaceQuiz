@@ -8,53 +8,83 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <!-- Title -->
-    <style name="title" parent="TextAppearance.AppCompat">
+    <style name="Title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
         <item name="android:textColor">@android:color/black</item>
         <item name="android:textStyle">bold</item>
         <item name="android:layout_marginTop">@dimen/marginTop</item>
         <item name="android:textSize">@dimen/title_textSize</item>
     </style>
 
-    <!-- Images -->
-    <style name="images" parent="AppTheme">
+    <style name="PlanetImage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/planet_image_height</item>
+        <item name="android:layout_gravity">center</item>
         <item name="android:layout_marginLeft">@dimen/marginLeft</item>
         <item name="android:layout_marginRight">@dimen/marginRight</item>
         <item name="android:layout_marginTop">@dimen/marginTop</item>
     </style>
 
-    <!-- Questions -->
-    <style name="question_textView" parent="TextAppearance.AppCompat">
+    <style name="Image">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/marginLeft</item>
+        <item name="android:layout_marginRight">@dimen/marginRight</item>
+        <item name="android:layout_marginTop">@dimen/marginTop</item>
+    </style>
+
+    <style name="ImageSource">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/image_source_marginTop</item>
+        <item name="android:textSize">@dimen/image_source_textSize</item>
+    </style>
+
+    <style name="Question">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">@android:color/black</item>
         <item name="android:padding">@dimen/question_padding</item>
         <item name="android:textSize">@dimen/default_textSize</item>
     </style>
 
-    <!-- EditText -->
-    <style name="editText" parent="TextAppearance.AppCompat">
+    <style name="EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginBottom">@dimen/marginBottom</item>
         <item name="android:layout_marginLeft">@dimen/marginLeft</item>
         <item name="android:layout_marginRight">@dimen/marginRight</item>
         <item name="android:textSize">@dimen/default_textSize</item>
     </style>
 
-    <!-- Views (line dividers) -->
-    <style name="view" parent="TextAppearance.AppCompat">
+    <style name="View">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/view_height</item>
         <item name="android:layout_marginLeft">@dimen/marginLeft</item>
         <item name="android:layout_marginRight">@dimen/marginRight</item>
         <item name="android:background">@android:color/darker_gray</item>
     </style>
 
-    <!-- RadioGroups -->
-    <style name="radioGroups" parent="TextAppearance.AppCompat">
+    <style name="RadioGroup">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginLeft">@dimen/marginLeft</item>
     </style>
 
-    <!-- CheckBoxes -->
-    <style name="checkBoxes" parent="TextAppearance.AppCompat">
+    <style name="RadioButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+
+    <style name="CheckBox">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginLeft">@dimen/marginLeft</item>
         <item name="android:layout_marginRight">@dimen/marginRight</item>
         <item name="android:textSize">@dimen/checkBox_textSize</item>
     </style>
-
 </resources>

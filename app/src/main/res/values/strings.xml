@@ -1,12 +1,7 @@
 <resources>
     <string name="app_name">Space Quiz</string>
 
-    <!-- Splash screen -->
-    <string name="splash_screen_title">Welcome</string>
-    <string name="splash_screen_subtitle">Don\'t panic</string>
-
-
-    <!-- Main Activity title -->
+    <!-- Title -->
     <string name="title">Space Quiz</string>
 
     <!-- Quiz questions -->
@@ -26,40 +21,45 @@
 
     <!-- Question 2 -->
     <string name="mount_one">Mount Kilimanjaro</string>
-    <string name="mount_two">Mount Everest</string>  // Correct answer
+    <string name="mount_two">Mount Everest</string>  <!-- Correct answer -->
     <string name="mount_three">Mount Fuji</string>
 
     <!-- Question 3 -->
-    <string name="ninety">90</string> // Correct answer
+    <string name="ninety">90</string> <!-- Correct answer -->
     <string name="thirty">30</string>
     <string name="one_twenty">120</string>
 
     <!-- Question 4 -->
-    <string name="jupiter_one">69</string> // Correct answer
+    <string name="jupiter_one">69</string> <!-- Correct answer -->
     <string name="jupiter_two">32</string>
     <string name="jupiter_three">14</string>
 
     <!-- Question 5 -->
     <string name="wrong_one">You can\'t. You would die instantly.</string>
     <string name="wrong_two">Several minutes.</string>
-    <string name="correct">15 seconds while conscious.</string> // Correct answer
+    <string name="correct">15 seconds while conscious.</string> <!-- Correct answer -->
 
     <!-- Question 6 -->
     <string name="yes">Yes</string>
-    <string name="no">No</string> // Correct answer
+    <string name="no">No</string> <!-- Correct answer -->
 
     <!-- Question 7 -->
     <string name="nature">Nature sounds</string>
     <string name="music">Music, including Beethoven and Chuck Berry</string>
-    <string name="narration">Orson Welles\' narration of The War of the Worlds</string> // Not correct
+    <string name="narration">Orson Welles\' narration of The War of the Worlds</string> <!-- Not correct -->
     <string name="pictures">Pictures and diagrams of life on Earth</string>
 
     <!-- Image descriptions -->
-    <string name="tesla_roadster">Elon Musk\'s Tesla in space</string>
     <string name="solar_system">Solar system</string>
-    <string name="dont_panic">Don\'t Panic</string>
     <string name="space_station">International Space Station</string>
+    <string name="tesla_roadster">Elon Musk\'s Tesla in space</string>
     <string name="voyager_record">Golden record on Voyager spacecraft</string>
+
+    <!-- Image sources -->
+    <string name="planet_image_source">Solar system. Image courtesy of NASA.\nhttps://www.flickr.com/photos/nasacommons/16469159316/sizes/l</string>
+    <string name="space_station_image_source">ISS. Image courtesy of Wikipedia and NASA.\nhttps://en.wikipedia.org/wiki/File:International_Space_Station_after_undocking_of_STS-132.jpg</string>
+    <string name="starman_image_source">Tesla in space. Image courtesy of SpaceX.\nhttps://www.flickr.com/photos/spacex/40143096241/sizes/l</string>
+    <string name="records_image_source">Voyager record. Image courtesy of NASA.\nhttps://www.flickr.com/photos/nasacommons/9460968490/sizes/l\nhttps://www.flickr.com/photos/nasacommons/9460968034/sizes/l</string>
 
     <!-- Buttons -->
     <string name="submit">Submit</string>

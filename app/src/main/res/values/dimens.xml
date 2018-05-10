@@ -10,15 +10,23 @@
     <dimen name="marginStart">16dp</dimen>
     <dimen name="marginBottom">16dp</dimen>
 
+    <!-- Image height -->
+    <dimen name="planet_image_height">300dp</dimen>
+
+    <!-- Image sources -->
+    <dimen name="image_source_textSize">8sp</dimen>
+    <dimen name="image_source_marginTop">1dp</dimen>
+
     <!-- Padding -->
     <dimen name="question_padding">16dp</dimen>
+
+    <!-- View (line dividers) -->
+    <dimen name="view_height">1dp</dimen>
 
     <!-- Text sizes -->
     <dimen name="title_textSize">24sp</dimen>
     <dimen name="default_textSize">16sp</dimen>
     <dimen name="checkBox_textSize">18sp</dimen>
-    <dimen name="splash_screen_title">48sp</dimen>
-    <dimen name="splash_screen_subtitle">30sp</dimen>
 
     <!-- Submit Button -->
     <dimen name="submit_marginEnd">8dp</dimen>

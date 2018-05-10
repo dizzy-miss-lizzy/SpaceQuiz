@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- NOTE: Image sources are cited here in XML and in TextViews for the user.
+
+Rocket icon: Image courtesy of Alejandro Vizio: https://openclipart.org/detail/178310/rocket
+Solar system: Image courtesy of NASA: https://www.flickr.com/photos/nasacommons/16469159316/sizes/l
+ISS: Image courtesy of Wikipedia and NASA: https://en.wikipedia.org/wiki/File:International_Space_Station_after_undocking_of_STS-132.jpg
+Starman: Image courtesy of SpaceX: https://www.flickr.com/photos/spacex/40143096241/sizes/l
+Record: Images courtesy of NASA: https://www.flickr.com/photos/nasacommons/9460968490/sizes/l and
+                                 https://www.flickr.com/photos/nasacommons/9460968034/sizes/l -->
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -20,329 +28,242 @@
             tools:context="com.example.android.spacequiz.MainActivity">
 
             <TextView
-                style="@style/title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
+                style="@style/Title"
                 android:fontFamily="sans-serif-condensed"
                 android:text="@string/title" />
 
             <ImageView
                 android:id="@+id/solar_system_image"
-                style="@style/images"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/PlanetImage"
                 android:adjustViewBounds="true"
                 android:contentDescription="@string/solar_system"
-                android:scaleType="fitCenter"
-                android:src="@drawable/solarsystem" />
+                android:src="@drawable/planets" />
 
             <TextView
-                style="@style/question_textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/ImageSource"
+                android:autoLink="web"
+                android:text="@string/planet_image_source" />
+
+            <TextView
+                style="@style/Question"
                 android:text="@string/question_one" />
 
             <EditText
                 android:id="@+id/planet_view"
-                style="@style/editText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/EditText"
                 android:hint="@string/edit_text_hint"
                 android:imeOptions="actionDone"
                 android:inputType="textCapWords" />
 
-            <View
-                style="@style/view"
-                android:layout_width="match_parent"
-                android:layout_height="1dp" />
+            <View style="@style/View" />
 
             <TextView
-                style="@style/question_textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/Question"
                 android:text="@string/question_two" />
 
             <RadioGroup
                 android:id="@+id/radio_group_two"
-                style="@style/radioGroups"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                style="@style/RadioGroup">
 
                 <RadioButton
                     android:id="@+id/kilimanjaro_radio_button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/RadioButton"
                     android:onClick="onSecondQuestionClicked"
-                    android:text="@string/mount_one"
-                    android:textAppearance="?android:textAppearanceMedium" />
+                    android:text="@string/mount_one" />
 
                 <RadioButton
                     android:id="@+id/everest_radio_button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/RadioButton"
                     android:onClick="onSecondQuestionClicked"
-                    android:text="@string/mount_two"
-                    android:textAppearance="?android:textAppearanceMedium" />
+                    android:text="@string/mount_two" />
 
                 <RadioButton
                     android:id="@+id/fuji_radio_button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/RadioButton"
                     android:layout_marginBottom="@dimen/marginBottom"
                     android:onClick="onSecondQuestionClicked"
-                    android:text="@string/mount_three"
-                    android:textAppearance="?android:textAppearanceMedium" />
-
+                    android:text="@string/mount_three" />
             </RadioGroup>
 
-            <View
-                style="@style/view"
-                android:layout_width="match_parent"
-                android:layout_height="1dp" />
+            <View style="@style/View" />
 
             <ImageView
                 android:id="@+id/space_station_image_view"
-                style="@style/images"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/Image"
                 android:adjustViewBounds="true"
                 android:contentDescription="@string/space_station"
-                android:scaleType="fitCenter"
                 android:src="@drawable/spacestation" />
 
             <TextView
-                style="@style/question_textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/ImageSource"
+                android:autoLink="web"
+                android:text="@string/space_station_image_source" />
+
+            <TextView
+                style="@style/Question"
                 android:text="@string/question_three" />
 
             <RadioGroup
                 android:id="@+id/radio_group_three"
-                style="@style/radioGroups"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                style="@style/RadioGroup">
 
                 <RadioButton
                     android:id="@+id/ninety_radio_button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/RadioButton"
                     android:onClick="onThirdQuestionClicked"
-                    android:text="@string/ninety"
-                    android:textAppearance="?android:textAppearanceMedium" />
+                    android:text="@string/ninety" />
 
                 <RadioButton
                     android:id="@+id/thirty_radio_button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/RadioButton"
                     android:onClick="onThirdQuestionClicked"
-                    android:text="@string/thirty"
-                    android:textAppearance="?android:textAppearanceMedium" />
+                    android:text="@string/thirty" />
 
                 <RadioButton
                     android:id="@+id/one_twenty_radio_button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/RadioButton"
                     android:layout_marginBottom="@dimen/marginBottom"
                     android:onClick="onThirdQuestionClicked"
-                    android:text="@string/one_twenty"
-                    android:textAppearance="?android:textAppearanceMedium" />
-
+                    android:text="@string/one_twenty" />
             </RadioGroup>
 
-            <View
-                style="@style/view"
-                android:layout_width="match_parent"
-                android:layout_height="1dp" />
+            <View style="@style/View" />
 
             <TextView
-                style="@style/question_textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/Question"
                 android:text="@string/question_four" />
 
             <RadioGroup
                 android:id="@+id/radio_group_four"
-                style="@style/radioGroups"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                style="@style/RadioGroup">
 
                 <RadioButton
                     android:id="@+id/jupiter_one_radio_button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/RadioButton"
                     android:onClick="onFourthQuestionClicked"
-                    android:text="@string/jupiter_one"
-                    android:textAppearance="?android:textAppearanceMedium" />
+                    android:text="@string/jupiter_one" />
 
                 <RadioButton
                     android:id="@+id/jupiter_two_radio_button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/RadioButton"
                     android:onClick="onFourthQuestionClicked"
-                    android:text="@string/jupiter_two"
-                    android:textAppearance="?android:textAppearanceMedium" />
+                    android:text="@string/jupiter_two" />
 
                 <RadioButton
                     android:id="@+id/jupiter_three_radio_button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/RadioButton"
                     android:layout_marginBottom="@dimen/marginBottom"
                     android:onClick="onFourthQuestionClicked"
-                    android:text="@string/jupiter_three"
-                    android:textAppearance="?android:textAppearanceMedium" />
-
+                    android:text="@string/jupiter_three" />
             </RadioGroup>
 
-            <View
-                style="@style/view"
-                android:layout_width="match_parent"
-                android:layout_height="1dp" />
+            <View style="@style/View" />
 
             <ImageView
-                android:id="@+id/panic_image_view"
-                style="@style/images"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
+                android:id="@+id/starman_image_view"
+                style="@style/Image"
                 android:adjustViewBounds="true"
-                android:contentDescription="@string/dont_panic"
-                android:scaleType="fitCenter"
-                android:src="@drawable/panic" />
+                android:contentDescription="@string/tesla_roadster"
+                android:src="@drawable/starman" />
 
             <TextView
-                style="@style/question_textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/ImageSource"
+                android:autoLink="web"
+                android:text="@string/starman_image_source" />
+
+            <TextView
+                style="@style/Question"
                 android:text="@string/question_five" />
 
             <RadioGroup
                 android:id="@+id/radio_group_five"
-                style="@style/radioGroups"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                style="@style/RadioGroup">
 
                 <RadioButton
                     android:id="@+id/wrong_one_radio_button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/RadioButton"
                     android:onClick="onFifthQuestionClicked"
-                    android:text="@string/wrong_one"
-                    android:textAppearance="?android:textAppearanceMedium" />
+                    android:text="@string/wrong_one" />
 
                 <RadioButton
                     android:id="@+id/wrong_two_radio_button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/RadioButton"
                     android:onClick="onFifthQuestionClicked"
-                    android:text="@string/wrong_two"
-                    android:textAppearance="?android:textAppearanceMedium" />
+                    android:text="@string/wrong_two" />
 
                 <RadioButton
                     android:id="@+id/correct_radio_button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/RadioButton"
                     android:layout_marginBottom="@dimen/marginBottom"
                     android:onClick="onFifthQuestionClicked"
-                    android:text="@string/correct"
-                    android:textAppearance="?android:textAppearanceMedium" />
-
+                    android:text="@string/correct" />
             </RadioGroup>
 
-            <View
-                style="@style/view"
-                android:layout_width="match_parent"
-                android:layout_height="1dp" />
+            <View style="@style/View" />
 
             <TextView
-                style="@style/question_textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/Question"
                 android:text="@string/question_six" />
 
             <RadioGroup
                 android:id="@+id/radio_group_six"
-                style="@style/radioGroups"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                style="@style/RadioGroup">
 
                 <RadioButton
                     android:id="@+id/yes_radio_button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/RadioButton"
                     android:onClick="onSixthQuestionClicked"
-                    android:text="@string/yes"
-                    android:textAppearance="?android:textAppearanceMedium" />
+                    android:text="@string/yes" />
 
                 <RadioButton
                     android:id="@+id/no_radio_button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/RadioButton"
                     android:layout_marginBottom="@dimen/marginBottom"
                     android:onClick="onSixthQuestionClicked"
-                    android:text="@string/no"
-                    android:textAppearance="?android:textAppearanceMedium" />
-
+                    android:text="@string/no" />
             </RadioGroup>
 
-            <View
-                style="@style/view"
-                android:layout_width="match_parent"
-                android:layout_height="1dp" />
+            <View style="@style/View" />
 
             <ImageView
-                android:id="@+id/voyager_image_view"
-                style="@style/images"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/record_image_view"
+                style="@style/Image"
                 android:adjustViewBounds="true"
                 android:contentDescription="@string/voyager_record"
-                android:scaleType="fitCenter"
-                android:src="@drawable/voyager" />
+                android:src="@drawable/records" />
 
             <TextView
-                style="@style/question_textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/ImageSource"
+                android:autoLink="web"
+                android:text="@string/records_image_source" />
+
+            <TextView
+                style="@style/Question"
                 android:text="@string/question_seven" />
 
             <CheckBox
                 android:id="@+id/nature_check_box"
-                style="@style/checkBoxes"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/CheckBox"
                 android:onClick="onCheckBoxClicked"
                 android:text="@string/nature" />
 
             <CheckBox
                 android:id="@+id/music_check_box"
-                style="@style/checkBoxes"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/CheckBox"
                 android:onClick="onCheckBoxClicked"
                 android:text="@string/music" />
 
             <CheckBox
                 android:id="@+id/narration_check_box"
-                style="@style/checkBoxes"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/CheckBox"
                 android:onClick="onCheckBoxClicked"
                 android:text="@string/narration" />
 
             <CheckBox
                 android:id="@+id/pictures_check_box"
-                style="@style/checkBoxes"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/CheckBox"
                 android:onClick="onCheckBoxClicked"
                 android:text="@string/pictures" />
-
         </LinearLayout>
 
         <LinearLayout
@@ -379,9 +300,6 @@
                 android:layout_weight="1"
                 android:onClick="resetScore"
                 android:text="@string/reset" />
-
         </LinearLayout>
-
     </LinearLayout>
-
 </ScrollView>
