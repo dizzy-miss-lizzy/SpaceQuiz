@@ -18,9 +18,6 @@ public class MainActivity extends AppCompatActivity {
     int score;
     boolean isSubmitted;
 
-    String scoreData;
-    String submit;
-
     EditText planetName;
     RadioGroup radioGroupTwo;
     RadioGroup radioGroupThree;
@@ -153,7 +150,7 @@ public class MainActivity extends AppCompatActivity {
              * Question 1: EditText
              * Correct answer: Venus
              */
-            if (planetName.getText().toString().trim().equals(getString(R.string.edit_text_answer))) {
+            if (planetName.getText().toString().trim().equalsIgnoreCase(getString(R.string.edit_text_answer))) {
                 score += 1;
             }
             // Displays toast message with user's score and changes isSubmitted value
