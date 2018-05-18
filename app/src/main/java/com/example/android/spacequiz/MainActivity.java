@@ -9,52 +9,55 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+// ButterKnife implemented from http://jakewharton.github.io/butterknife/
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 /**
  * This app quizzes the user about space and displays the results in a toast message when the Submit button is clicked.
  * A Reset button is available if the user wants to try again.
  */
 public class MainActivity extends AppCompatActivity {
 
-    int score;
+    int score = 0;
     boolean isSubmitted;
+    boolean secondAnswer;
+    boolean thirdAnswer;
+    boolean fourthAnswer;
+    boolean fifthAnswer;
+    boolean sixthAnswer;
+    boolean seventhAnswer;
 
-    EditText planetName;
-    RadioGroup radioGroupTwo;
-    RadioGroup radioGroupThree;
-    RadioGroup radioGroupFour;
-    RadioGroup radioGroupFive;
-    RadioGroup radioGroupSix;
-    RadioButton everest;
-    RadioButton ninety;
-    RadioButton jupiterOne;
-    RadioButton correct;
-    RadioButton noSound;
-    CheckBox nature;
-    CheckBox music;
-    CheckBox narration;
-    CheckBox pictures;
+    @BindView(R.id.planet_view) EditText planetName;
+    @BindView(R.id.radio_group_two) RadioGroup radioGroupTwo;
+    @BindView(R.id.radio_group_three) RadioGroup radioGroupThree;
+    @BindView(R.id.radio_group_four) RadioGroup radioGroupFour;
+    @BindView(R.id.radio_group_five) RadioGroup radioGroupFive;
+    @BindView(R.id.radio_group_six) RadioGroup radioGroupSix;
+    @BindView(R.id.everest_radio_button) RadioButton everest;
+    @BindView(R.id.ninety_radio_button) RadioButton ninety;
+    @BindView(R.id.jupiter_one_radio_button) RadioButton jupiterOne;
+    @BindView(R.id.correct_radio_button) RadioButton correct;
+    @BindView(R.id.no_radio_button) RadioButton noSound;
+    @BindView(R.id.nature_check_box) CheckBox nature;
+    @BindView(R.id.music_check_box) CheckBox music;
+    @BindView(R.id.pictures_check_box) CheckBox pictures;
+    @BindView(R.id.narration_check_box) CheckBox narration;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        planetName = (EditText) findViewById(R.id.planet_view);
-        radioGroupTwo = (RadioGroup) findViewById(R.id.radio_group_two);
-        radioGroupThree = (RadioGroup) findViewById(R.id.radio_group_three);
-        radioGroupFour = (RadioGroup) findViewById(R.id.radio_group_four);
-        radioGroupFive = (RadioGroup) findViewById(R.id.radio_group_five);
-        radioGroupSix = (RadioGroup) findViewById(R.id.radio_group_six);
-        everest = (RadioButton) findViewById(R.id.everest_radio_button);
-        ninety = (RadioButton) findViewById(R.id.ninety_radio_button);
-        jupiterOne = (RadioButton) findViewById(R.id.jupiter_one_radio_button);
-        correct = (RadioButton) findViewById(R.id.correct_radio_button);
-        noSound = (RadioButton) findViewById(R.id.no_radio_button);
-        nature = (CheckBox) findViewById(R.id.nature_check_box);
-        music = (CheckBox) findViewById(R.id.music_check_box);
-        pictures = (CheckBox) findViewById(R.id.pictures_check_box);
-        narration = (CheckBox) findViewById(R.id.narration_check_box);
+        ButterKnife.bind(this);
+
         isSubmitted = false;
+        secondAnswer = false;
+        thirdAnswer = false;
+        fourthAnswer = false;
+        fifthAnswer = false;
+        sixthAnswer = false;
+        seventhAnswer = false;
     }
 
     /**
@@ -65,6 +68,12 @@ public class MainActivity extends AppCompatActivity {
         super.onSaveInstanceState(outState);
         outState.putInt("scoreData", score);
         outState.putBoolean("submit", isSubmitted);
+        outState.putBoolean("secondAnswer", secondAnswer);
+        outState.putBoolean("thirdAnswer", thirdAnswer);
+        outState.putBoolean("fourthAnswer", fourthAnswer);
+        outState.putBoolean("fifthAnswer", fifthAnswer);
+        outState.putBoolean("sixthAnswer", sixthAnswer);
+        outState.putBoolean("seventhAnswer", seventhAnswer);
     }
 
     /*
@@ -75,6 +84,12 @@ public class MainActivity extends AppCompatActivity {
         super.onRestoreInstanceState(savedInstanceState);
         score = savedInstanceState.getInt("scoreData");
         isSubmitted = savedInstanceState.getBoolean("submit");
+        secondAnswer = savedInstanceState.getBoolean("secondAnswer");
+        thirdAnswer = savedInstanceState.getBoolean("thirdAnswer");
+        fourthAnswer = savedInstanceState.getBoolean("fourthAnswer");
+        fifthAnswer = savedInstanceState.getBoolean("fifthAnswer");
+        sixthAnswer = savedInstanceState.getBoolean("sixthAnswer");
+        seventhAnswer = savedInstanceState.getBoolean("seventhAnswer");
     }
 
     /**
@@ -83,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void onSecondQuestionClicked(View view) {
         if (everest.isChecked()) {
-            score += 1;
+            secondAnswer = true;
         }
     }
 
@@ -93,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void onThirdQuestionClicked(View view) {
         if (ninety.isChecked()) {
-            score += 1;
+            thirdAnswer = true;
         }
     }
 
@@ -103,7 +118,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void onFourthQuestionClicked(View view) {
         if (jupiterOne.isChecked()) {
-            score += 1;
+            fourthAnswer = true;
         }
     }
 
@@ -113,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void onFifthQuestionClicked(View view) {
         if (correct.isChecked()) {
-            score += 1;
+            fifthAnswer = true;
         }
     }
 
@@ -123,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void onSixthQuestionClicked(View view) {
         if (noSound.isChecked()) {
-            score += 1;
+            sixthAnswer = true;
         }
     }
 
@@ -134,7 +149,7 @@ public class MainActivity extends AppCompatActivity {
     public void onCheckBoxClicked(View view) {
         // Will only return a score of 1 if ALL correct answers are selected
         if (nature.isChecked() && music.isChecked() && pictures.isChecked() && !narration.isChecked()) {
-            score += 1;
+            seventhAnswer = true;
         }
     }
 
@@ -151,7 +166,26 @@ public class MainActivity extends AppCompatActivity {
              * Correct answer: Venus
              */
             if (planetName.getText().toString().trim().equalsIgnoreCase(getString(R.string.edit_text_answer))) {
-                score += 1;
+                score++;
+            }
+            // Calls answer booleans and increments score
+            if (secondAnswer) {
+                score++;
+            }
+            if (thirdAnswer) {
+                score++;
+            }
+            if (fourthAnswer) {
+                score++;
+            }
+            if (fifthAnswer) {
+                score++;
+            }
+            if (sixthAnswer) {
+                score++;
+            }
+            if (seventhAnswer) {
+                score++;
             }
             // Displays toast message with user's score and changes isSubmitted value
             Toast.makeText(getApplicationContext(), getString(R.string.score) + score + getString(R.string.max_score), Toast.LENGTH_LONG).show();
@@ -160,9 +194,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void resetScore(View view) {
-        // Resets score and boolean for Submit
+        // Resets score and booleans for Submit and answers
         score = 0;
         isSubmitted = false;
+        secondAnswer = false;
+        thirdAnswer = false;
+        fourthAnswer = false;
+        fifthAnswer = false;
+        sixthAnswer = false;
+        seventhAnswer = false;
 
         // Resets EditText for question 1
         planetName.getText().clear();
