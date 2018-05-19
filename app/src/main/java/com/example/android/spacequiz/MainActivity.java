@@ -9,10 +9,6 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
-// ButterKnife implemented from http://jakewharton.github.io/butterknife/
-import butterknife.BindView;
-import butterknife.ButterKnife;
-
 /**
  * This app quizzes the user about space and displays the results in a toast message when the Submit button is clicked.
  * A Reset button is available if the user wants to try again.
@@ -28,29 +24,42 @@ public class MainActivity extends AppCompatActivity {
     boolean sixthAnswer;
     boolean seventhAnswer;
 
-    @BindView(R.id.planet_view) EditText planetName;
-    @BindView(R.id.radio_group_two) RadioGroup radioGroupTwo;
-    @BindView(R.id.radio_group_three) RadioGroup radioGroupThree;
-    @BindView(R.id.radio_group_four) RadioGroup radioGroupFour;
-    @BindView(R.id.radio_group_five) RadioGroup radioGroupFive;
-    @BindView(R.id.radio_group_six) RadioGroup radioGroupSix;
-    @BindView(R.id.everest_radio_button) RadioButton everest;
-    @BindView(R.id.ninety_radio_button) RadioButton ninety;
-    @BindView(R.id.jupiter_one_radio_button) RadioButton jupiterOne;
-    @BindView(R.id.correct_radio_button) RadioButton correct;
-    @BindView(R.id.no_radio_button) RadioButton noSound;
-    @BindView(R.id.nature_check_box) CheckBox nature;
-    @BindView(R.id.music_check_box) CheckBox music;
-    @BindView(R.id.pictures_check_box) CheckBox pictures;
-    @BindView(R.id.narration_check_box) CheckBox narration;
+    EditText planetName;
+    RadioGroup radioGroupTwo;
+    RadioGroup radioGroupThree;
+    RadioGroup radioGroupFour;
+    RadioGroup radioGroupFive;
+    RadioGroup radioGroupSix;
+    RadioButton everest;
+    RadioButton ninety;
+    RadioButton jupiterOne;
+    RadioButton correct;
+    RadioButton noSound;
+    CheckBox nature;
+    CheckBox music;
+    CheckBox narration;
+    CheckBox pictures;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ButterKnife.bind(this);
-
+        planetName = (EditText) findViewById(R.id.planet_view);
+        radioGroupTwo = (RadioGroup) findViewById(R.id.radio_group_two);
+        radioGroupThree = (RadioGroup) findViewById(R.id.radio_group_three);
+        radioGroupFour = (RadioGroup) findViewById(R.id.radio_group_four);
+        radioGroupFive = (RadioGroup) findViewById(R.id.radio_group_five);
+        radioGroupSix = (RadioGroup) findViewById(R.id.radio_group_six);
+        everest = (RadioButton) findViewById(R.id.everest_radio_button);
+        ninety = (RadioButton) findViewById(R.id.ninety_radio_button);
+        jupiterOne = (RadioButton) findViewById(R.id.jupiter_one_radio_button);
+        correct = (RadioButton) findViewById(R.id.correct_radio_button);
+        noSound = (RadioButton) findViewById(R.id.no_radio_button);
+        nature = (CheckBox) findViewById(R.id.nature_check_box);
+        music = (CheckBox) findViewById(R.id.music_check_box);
+        pictures = (CheckBox) findViewById(R.id.pictures_check_box);
+        narration = (CheckBox) findViewById(R.id.narration_check_box);
         isSubmitted = false;
         secondAnswer = false;
         thirdAnswer = false;
