@@ -60,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
         music = (CheckBox) findViewById(R.id.music_check_box);
         pictures = (CheckBox) findViewById(R.id.pictures_check_box);
         narration = (CheckBox) findViewById(R.id.narration_check_box);
+
         isSubmitted = false;
         secondAnswer = false;
         thirdAnswer = false;
